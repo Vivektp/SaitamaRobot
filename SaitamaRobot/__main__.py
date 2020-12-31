@@ -199,27 +199,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add ME to your group",
+                            text="Add ME to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Group",
+                             text="Support Group",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="🔔 Updates Channel",
+                             text="Updates Channel",
                              url="https://t.me/VKPROJECTS")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧾 Getting started guide",
+                             text="Getting started guide",
                              url="https://t.me/VKPROJECTS")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="🗄 Source code",
-                             url="https://github.com")
                      ]]))
     else:
         update.effective_message.reply_text(
